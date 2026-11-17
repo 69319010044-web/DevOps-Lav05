@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jigsaw Puzzle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="outer-screen">
+      <div class="browser-window">
+        <div class="browser-bar">
+          <div class="traffic-lights">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="browser-title">DevOps-Lab05-2</div>
+        </div>
+
+        <main class="game-shell">
+          <div class="game-header">
+            <div class="title-wrap">
+              <p class="game-kicker">JIGSAW PUZZLE</p>
+              <h1>เกมต่อภาพรถ</h1>
+            </div>
+
+            <div class="buttons">
+              <button id="shuffleBtn" class="btn btn-secondary">เลื่อนปิด</button>
+              <button id="resetBtn" class="btn btn-primary">เริ่มใหม่</button>
+            </div>
+          </div>
+
+          <div class="game-body">
+            <section class="board-panel">
+              <div class="board-meta">
+                <span>ต่อเวล</span>
+                <span id="timer">00:00</span>
+              </div>
+              <div id="board" class="board" aria-label="Puzzle board"></div>
+            </section>
+
+            <aside class="tray-panel">
+              <div class="tray-header">
+                <span>ชิ้นส่วน</span>
+                <span id="pieceCount">20 ชิ้น</span>
+              </div>
+              <div id="tray" class="tray" aria-label="Puzzle pieces"></div>
+            </aside>
+          </div>
+
+          <div class="status-bar">
+            <span class="status-label">สถานะ</span>
+            <span id="statusText">พร้อมเล่น</span>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
